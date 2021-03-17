@@ -1,0 +1,148 @@
+.index {
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(106, 157, 170, 0.5);
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+p,
+h3 {
+  margin-top: 0.8rem;
+}
+
+.socials {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(3.5rem, 1fr));
+  a {
+    margin: auto;
+    filter: grayscale(100%);
+    transition: filter 200ms ease;
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
+
+.contact {
+  color: #c7c7c7;
+  text-align: center;
+  margin-bottom: 1rem;
+  span {
+    display: block;
+  }
+}
+
+.email-link {
+  color: currentColor;
+  transition: color 200ms ease;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+}
+
+a:not(.email-link):not(.silent) {
+  color: #55e43c;
+  text-decoration: none;
+  transition: color 200ms ease;
+  font-weight: 400;
+  &:hover {
+    color: #22a30b;
+  }
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  margin-left: 3rem;
+}
+
+.github {
+  color: #9c9c9c;
+  transition: color 200ms ease;
+}
+
+.github:hover {
+  color: white !important;
+}
+
+.discord img {
+  height: 1.1em;
+  vertical-align: -0.5rem;
+}
+
+.linkedin img {
+  height: 0.9em;
+  vertical-align: -0.2rem;
+}
+
+.twitch img {
+  height: 1em;
+  vertical-align: -0.5rem;
+}
+
+.twitter {
+  color: #1da1f2 !important;
+}
+
+.discord {
+  color: #7289da !important;
+}
+
+.logo {
+  height: 10rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: relative;
+  img {
+    display: block;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.xqcL {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  &.shown {
+    opacity: 1;
+    transition-delay: 2000ms;
+  }
+}
+
+.komodohype {
+  opacity: 1;
+  transition: opacity 200ms ease;
+  &.hidden {
+    opacity: 0;
+    transition-delay: 2000ms;
+  }
+}

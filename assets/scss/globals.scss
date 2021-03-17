@@ -1,0 +1,23 @@
+:root {
+  font-size: max(16px, 1vmin);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-weight: 300;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: rgb(255, 255, 255);
+  background-color: rgb(6, 17, 71);
+  word-break: break-word;
+  @media screen and (max-width: 300px) {
+    word-break: break-all;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
