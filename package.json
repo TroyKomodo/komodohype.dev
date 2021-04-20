@@ -27,7 +27,7 @@
     "@nuxtjs/amp": "^0.5.4",
     "@nuxtjs/fontawesome": "^1.1.2",
     "core-js": "^3.10.2",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.15.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
